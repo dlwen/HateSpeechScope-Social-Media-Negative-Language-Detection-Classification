@@ -1,5 +1,6 @@
 # HateSpeechScope: Social Media Negative Language Detection and Classification System
 *Lingwen Deng*
+
 *Overview Video URL:*https://drive.google.com/file/d/1jVNJaK4tr0N3kJKXRugyTb5uco2mqdcn/view?usp=sharing
 
 
