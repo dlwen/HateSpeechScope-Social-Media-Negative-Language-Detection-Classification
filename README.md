@@ -85,7 +85,8 @@ This approach ensures both the detection of harmful language and an understandin
 	* 1: Offensive Language
 	* 2: Neutral Content
 * **Purpose**: To detect harmful or offensive language and differentiate it from neutral content, forming the first step of the system pipeline.
-![](Screen%20Shot%202024-12-06%20at%2010.29.55.png)
+<img width="667" alt="Screen Shot 2024-12-06 at 10 29 55" src="https://github.com/user-attachments/assets/76ca922d-14d7-49d6-85c2-3437cbce6165">
+
 
 ### Fine-Tuning Details
 The model was fine-tuned on the Hate Speech and Offensive Language Dataset, consisting of 24,783 labeled tweets. Here’s the step-by-step process:
@@ -131,7 +132,8 @@ Matthews Correlation Coefficient (MCC): 0.748
 	* Recall: 0.89
 	* F1-Score: 0.90
 	* Support: 430 samples
-![](Screen%20Shot%202024-12-06%20at%2010.30.36.png)
+<img width="408" alt="Screen Shot 2024-12-06 at 10 30 36" src="https://github.com/user-attachments/assets/70a27314-3acb-4154-90b2-579f815270d9">
+
 
 ### Usage
 * **Input**: A cleaned tweet or sentence.
@@ -147,7 +149,8 @@ Matthews Correlation Coefficient (MCC): 0.748
 * **Model**: [BERT](https://arxiv.org/abs/1810.04805)(Fine-Tuned)
 * **Task**: Multi-class text classification to assign a topic label (e.g., politics, sports, entertainment) to input text.
 * **Purpose**: To provide thematic categorization of hate speech or offensive language, enabling deeper contextual analysis and targeted interventions.
-![](Screen%20Shot%202024-12-06%20at%2010.45.41.png)
+<img width="515" alt="Screen Shot 2024-12-06 at 10 45 41" src="https://github.com/user-attachments/assets/a76d7592-9074-4523-934d-393104988379">
+
 ### Fine-Tuning Details
 The model was fine-tuned on the News Category Dataset , containing over 200,000 news headlines and short descriptions categorized into 10 topics. Here’s the fine-tuning process:
 * **Preprocessing**:
@@ -200,12 +203,14 @@ Weighted Avg F1-Score: 0.86
 	Precision: 0.88, Recall: 0.91, F1-Score: 0.89, Support: 1,920
 	* Wellness:
 	Precision: 0.89, Recall: 0.83, F1-Score: 0.86, Support: 4,915
-![](Screen%20Shot%202024-12-06%20at%2010.46.56.png)
+<img width="431" alt="Screen Shot 2024-12-06 at 10 46 56" src="https://github.com/user-attachments/assets/8aba3634-a052-41d0-8fe3-16e094a9b9bd">
+
 * **Confusion Matrix Insights**:
 	* Categories like Politics (Precision: 0.91, Recall: 0.93) and Food & Drink (Precision: 0.87, Recall: 0.88) show strong performance, indicating accurate predictions for these classes.
 	* Categories such as Comedy (Precision: 0.72, Recall: 0.49) show lower recall, suggesting challenges in correctly identifying all instances of comedy content.
 	* Misclassifications primarily occur in semantically overlapping categories, such as “Entertainment” vs. “Comedy” or “Wellness” vs. “Parenting.”
-![](C357AD8D-DFC0-4935-AB20-91DD676AFCAB.png)
+![C357AD8D-DFC0-4935-AB20-91DD676AFCAB](https://github.com/user-attachments/assets/17fc35d8-3b21-4447-ace9-66b290535e80)
+
 
 ### Usage
 * **Input**: A cleaned text string detected as hate speech or offensive language.
@@ -228,6 +233,10 @@ The model pipeline integrates two fine-tuned BERT models to analyze textual data
 * **Step 2: Topic Classifier**
 	* Function: Assigns a thematic category to the input text if it is identified as hate speech or offensive language.
 	* Output: One of 10 predefined topics, such as Politics, Entertainment, Sports, etc.
+
+<img width="567" alt="PipelineVisualization" src="https://github.com/user-attachments/assets/ddb055b2-35df-46d6-ab3f-b859a75c82fd">
+
+
 
 ### Workflow
 * **Input**: The pipeline receives raw text (e.g., tweets or comments).
