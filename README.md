@@ -1,5 +1,5 @@
 # HateSpeechScope: Social Media Negative Language Detection and Classification System
-## Lingwen Deng
+*Lingwen Deng*
 
 ## Overview
 ### Context
@@ -46,7 +46,7 @@ This approach ensures both the detection of harmful language and an understandin
 ### Licensing and Access
 * **License**: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) 
 
-
+<br>
 
 ## Dataset - Text Category Classification Dataset
 ### Overview
@@ -74,8 +74,7 @@ This approach ensures both the detection of harmful language and an understandin
 ### Licensing and Access
 * **License**: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) 
 
-
-
+<br>
 
 ## Model - Hate Speech Classifier
 ### Overview
@@ -142,7 +141,7 @@ Matthews Correlation Coefficient (MCC): 0.748
 
 
 
-
+<br>
 
 ## Model - Text Category Classifier
 ### Model Description
@@ -216,7 +215,9 @@ Weighted Avg F1-Score: 0.86
 * **Input**: A cleaned text string detected as hate speech or offensive language.
 	* Example:  “The politician’s recent actions have sparked controversy.”
 * **Output**: Predicted category: Politics
-.
+
+<br>
+
 
 ## Model Pipeline: Hate Speech and Topic Classification System
 ### Overview
@@ -266,6 +267,8 @@ Output: Politics (Politics)
 	* Topic: Politics
 
 
+<br>
+
 ## Critical Analysis - Impact of the Project 
 * **Content Moderation**:
 	* Enables automated detection of hate speech and offensive language, helping online platforms flag or remove harmful content efficiently.
@@ -276,6 +279,8 @@ Output: Politics (Politics)
 * **Safer Online Spaces**:
 	* Contributes to creating a safer and more inclusive internet by identifying and categorizing harmful language.
 	* Offers potential for broader applications, such as trend analysis, public opinion monitoring, and informing educational campaigns against hate speech.
+
+<br>
 
 ## Critical Analysis - Next Steps
 * **Enhance Dataset Diversity**:
@@ -288,6 +293,7 @@ Output: Politics (Politics)
 	* Extend the system to support multiple languages for a broader global impact.
 	* Explore additional tasks, such as sentiment analysis, to complement topic categorization.
 
+<br>
 
 ## Bibliography
 1. Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova
