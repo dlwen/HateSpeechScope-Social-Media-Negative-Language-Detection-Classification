@@ -75,6 +75,8 @@ This approach ensures both the detection of harmful language and an understandin
 * **License**: [CC0: Public Domain](https://creativecommons.org/publicdomain/zero/1.0/) 
 
 
+
+
 ## Model - Hate Speech Classifier
 ### Overview
 * **Model**: [BERT](https://arxiv.org/abs/1810.04805) (Fine-Tuned)
@@ -138,12 +140,13 @@ Matthews Correlation Coefficient (MCC): 0.748
 
 
 
+
+
 ## Model - Text Category Classifier
 ### Model Description
 * **Model**: [BERT](https://arxiv.org/abs/1810.04805)(Fine-Tuned)
 * **Task**: Multi-class text classification to assign a topic label (e.g., politics, sports, entertainment) to input text.
 * **Purpose**: To provide thematic categorization of hate speech or offensive language, enabling deeper contextual analysis and targeted interventions.
-
 ![](Screen%20Shot%202024-12-06%20at%2010.45.41.png)
 ### Fine-Tuning Details
 The model was fine-tuned on the News Category Dataset , containing over 200,000 news headlines and short descriptions categorized into 10 topics. Here’s the fine-tuning process:
