@@ -1,5 +1,5 @@
-# Hate Speech and Topic Classification System
-Lingwen Deng
+# HateSpeechScope: Social Media Negative Language Detection and Classification System
+## Lingwen Deng
 
 ## Overview
 ### Context
